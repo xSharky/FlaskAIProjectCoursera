@@ -10,7 +10,7 @@ Ejemplo de uso:
 """
 
 # Importa la función principal desde el módulo emotion_detection
-from .emotion_detection import emotion_detector
+from .emotion_detection import emotion_detector, error_response
 
 # Define qué elementos se exportan cuando se usa 'from EmotionDetection import *'
-__all__ = ['emotion_detector']
+__all__ = ['emotion_detector', 'error_response']
