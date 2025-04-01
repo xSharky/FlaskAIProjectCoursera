@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Título de la página -->
+    <title>Emotion Detector</title>
+    
+    <!-- Importa el archivo JavaScript desde la carpeta static -->
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <h1>Emotion Detection</h1>
+    
+    <!-- Campo de entrada de texto -->
+    <input type="text" id="textToAnalyze" placeholder="Enter text here...">
+    
+    <!-- Botón que ejecuta la función analyzeEmotion() del JavaScript -->
+    <button onclick="analizarEmocion()">Analyze</button>
+    
+    <!-- Div donde se mostrarán los resultados -->
+    <div id="result"></div>
+</body>
+</html>
